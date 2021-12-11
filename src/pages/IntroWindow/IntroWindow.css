@@ -6,7 +6,7 @@
   padding: 4px;
   line-height: 1.5rem;
   text-align: center;
-  margin: auto;
+  margin: 2rem auto;
 }
 
 .intro-btn:hover {
@@ -15,6 +15,12 @@
 
 @media screen and (max-width: 480px) {
   .intro-wrapper {
-    width: 20rem;
+    width: 15rem;
+    height: 12rem;
+  }
+
+  .intro-btn {
+    height: 3.2rem;
+    margin-top: 3rem;
   }
 }

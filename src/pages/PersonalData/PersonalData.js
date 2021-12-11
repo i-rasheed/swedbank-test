@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import ErrorNotice from "../../components/ErrorNotice/ErrorNotice";
 import "./PersonalData.css";
+import FormSteps from "../../components/FormSteps/FormSteps";
 
 const initialValues = {
   firstName: "",
@@ -45,6 +46,7 @@ const PersonalData = () => {
 
   return (
     <div className="center">
+      <FormSteps></FormSteps>
       {error && <ErrorNotice message={error} />}
       <form onSubmit={submitHandler}>
         <label htmlFor="firstName"> First Name: * </label>
