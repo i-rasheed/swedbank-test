@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./BankAccount.css";
 import { useNavigate } from "react-router-dom";
 import ErrorNotice from "../../components/ErrorNotice/ErrorNotice";
+import FormSteps from "../../components/FormSteps/FormSteps";
 
 const initialValues = {
   bankName: "",
@@ -46,6 +47,7 @@ export default function BankAccount() {
 
   return (
     <div className="center">
+      <FormSteps step1 step2></FormSteps>
       {error && <ErrorNotice message={error} />}
       <form onSubmit={submitHandler}>
         <label htmlFor="bankName">Bank Name: * </label>

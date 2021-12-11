@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./ApplicationData.css";
 import { useNavigate } from "react-router-dom";
 import ErrorNotice from "../../components/ErrorNotice/ErrorNotice";
+import FormSteps from "../../components/FormSteps/FormSteps";
 
 const initialValues = {
   loanAmount: "",
@@ -42,7 +43,7 @@ export default function ApplicationData() {
     };
 
     if (data.salary < 2000) {
-      return setError("Not eligible, salry lessthen £2000!");
+      return setError("Not eligible, salary less than £2000!");
     }
 
     localStorage.setItem("applicationData", JSON.stringify(applicationData));
@@ -51,9 +52,10 @@ export default function ApplicationData() {
 
   return (
     <div className="center">
+      <FormSteps step1></FormSteps>
       <ErrorNotice message={error} />
       <form onSubmit={submitHandler}>
-        <label htmlFor="loanAmount">Loan Amount: * £</label>
+        <label htmlFor="loanAmount">Loan Amount: * £ </label>
         <input
           type="text"
           name="loanAmount"

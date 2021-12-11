@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Summary.css";
 import { useNavigate } from "react-router-dom";
 import MsgNotice from "../../components/MsgNotice/MsgNotice";
+import FormSteps from "../../components/FormSteps/FormSteps";
 
 export default function Summary() {
   const [msg, setMsg] = useState();
@@ -22,6 +23,7 @@ export default function Summary() {
 
   return (
     <div className="summary-wrapper">
+      <FormSteps step1 step2 step3 step4></FormSteps>
       <div className="margin-top">
         {msg && <MsgNotice message={msg} />}
         <div className="margin-btm-10">

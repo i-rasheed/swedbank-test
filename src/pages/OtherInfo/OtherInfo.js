@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./OtherInfo.css";
 import { useNavigate } from "react-router-dom";
 import ErrorNotice from "../../components/ErrorNotice/ErrorNotice";
+import FormSteps from "../../components/FormSteps/FormSteps";
 
 const initialValues = {
   kin_name: "",
@@ -45,6 +46,7 @@ export default function OtherInfo() {
 
   return (
     <div className="center">
+      <FormSteps step1 step2 step3></FormSteps>
       {error && <ErrorNotice message={error} />}
       <form onSubmit={submitHandler}>
         <label htmlFor="kin_name">Next of Kin Name: * </label>
