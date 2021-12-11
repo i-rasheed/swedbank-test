@@ -1,0 +1,20 @@
+.intro-wrapper {
+  background: #f9f8f6;
+  /* width: 20rem; mobile */
+  width: 50rem;
+  height: 10rem;
+  padding: 4px;
+  line-height: 1.5rem;
+  text-align: center;
+  margin: auto;
+}
+
+.intro-btn:hover {
+  background: rgb(54, 51, 51);
+}
+
+@media screen and (max-width: 480px) {
+  .intro-wrapper {
+    width: 20rem;
+  }
+}

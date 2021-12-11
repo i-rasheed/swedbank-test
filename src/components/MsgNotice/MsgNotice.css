@@ -1,0 +1,14 @@
+.msg-notice {
+  color: grey;
+  text-align: center;
+  border: 1px solid black;
+  background: black;
+  height: 1.2rem;
+  margin: 0 28rem;
+}
+
+@media screen and (max-width: 480px) {
+  .msg-notice {
+    margin: 0;
+  }
+}

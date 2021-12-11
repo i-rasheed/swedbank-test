@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  padding: 2rem 2rem;
+}
+
+p {
+  font-size: 16px;
+}
+
+.center {
+  text-align: center;
+}
+
+form {
+  margin-top: 1rem;
+}
+
+label {
+  color: gray;
+  font-size: 16px;
+}
+
+input {
+  width: 16rem;
+  /* height: 3rem; */
+  /* font-size: 3rem; */
+  color: #ee7023;
+  font-weight: bolder;
+  /* background: white; */
+}
+
+select {
+  /* width: 16rem;
+  height: 3rem;
+  font-size: 3rem; */
+  font-weight: bolder;
+  color: #ee7023;
+}
+
+button {
+  border: none;
+  background: black;
+  color: #ee7023;
+  margin-top: 2rem;
+  cursor: pointer;
+  outline: none;
+  width: 10rem;
+  height: 4rem;
+  padding: 0 3px;
+  border-radius: 10px;
+}
+
+.next-btn {
+  margin-left: 2rem;
+}
+
+@media screen and (max-width: 480px) {
+  button {
+    width: 5rem;
+    height: 2rem;
+  }
+}

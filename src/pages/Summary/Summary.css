@@ -1,0 +1,26 @@
+.summary-wrapper {
+  text-align: center;
+}
+
+.margin-btm-10 {
+  margin-bottom: 15px;
+}
+
+.margin-top {
+  margin-top: 20px;
+}
+
+.acc_details {
+  margin-bottom: 2rem;
+  /* margin-bottom: 1rem; mobile */
+}
+
+@media screen and (max-width: 480px) {
+  .right-summary {
+    margin-left: 0;
+  }
+
+  .acc_details {
+    margin-bottom: 0;
+  }
+}
