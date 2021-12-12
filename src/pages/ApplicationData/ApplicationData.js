@@ -47,8 +47,10 @@ export default function ApplicationData() {
       reason,
     };
 
-    if (data.salary < 2000) {
-      return setError("Not eligible, salary less than £2000!");
+    if (loanAmount > (20 / 100) * data.salary) {
+      return setError(
+        "Not eligible, loan amount greater than 20 percent salary!"
+      );
     }
 
     localStorage.setItem("applicationData", JSON.stringify(applicationData));

@@ -4,9 +4,10 @@ import "./Header.css";
 
 export default function Header() {
   const navigate = useNavigate();
+
   const brandClickHandler = () => {
     navigate("/");
-    localStorage.clearItem();
+    localStorage.clear();
   };
   return (
     <div>
