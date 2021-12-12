@@ -6,6 +6,7 @@ export default function Header() {
   const navigate = useNavigate();
   const brandClickHandler = () => {
     navigate("/");
+    localStorage.clearItem();
   };
   return (
     <div>

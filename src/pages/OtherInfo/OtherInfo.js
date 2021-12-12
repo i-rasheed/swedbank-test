@@ -68,7 +68,7 @@ export default function OtherInfo() {
           type="text"
           name="kin_number"
           id="kin_number"
-          value={values.kin_Number}
+          value={values.kin_number}
           onChange={handleInputChange}
         />{" "}
         <br />
