@@ -30,12 +30,12 @@ export default function Summary() {
           <h3>Personal Data</h3>
           <p>First name: {personalData.firstName}</p>
           <p>Last name: {personalData.lastName}</p>
-          <p> Salary: {personalData.salary}</p>
-          <p>repayment: {personalData.repayment}</p>
+          <p> Salary: £ {personalData.salary}</p>
+          <p>repayment Date: {personalData.repayment}</p>
         </div>
         <div className="margin-btm-10">
           <h3>Application Data</h3>
-          <p>Loan amount: {applicationData.loanAmount}</p>
+          <p>Loan amount: £ {applicationData.loanAmount}</p>
           <p>Reason: {applicationData.reason}</p>
         </div>
       </div>
@@ -49,7 +49,7 @@ export default function Summary() {
         </div>
         <div className="margin-btm-10">
           <h3>Other Info</h3>
-          <p>Kin name: {OtherInfo.kin_name}</p>
+          <p>Kin name: {OtherInfo.kin_name}</p>s
           <p>Kin contact: {OtherInfo.kin_number}</p>
         </div>
         <button onClick={previousHandler}>Previous</button>
