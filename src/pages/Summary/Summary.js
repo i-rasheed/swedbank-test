@@ -49,7 +49,7 @@ export default function Summary() {
         </div>
         <div className="margin-btm-10">
           <h3>Other Info</h3>
-          <p>Kin name: {OtherInfo.kin_name}</p>s
+          <p>Kin name: {OtherInfo.kin_name}</p>
           <p>Kin contact: {OtherInfo.kin_number}</p>
         </div>
         <button onClick={previousHandler}>Previous</button>
