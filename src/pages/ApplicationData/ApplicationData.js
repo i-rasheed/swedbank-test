@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import ErrorNotice from "../../components/ErrorNotice/ErrorNotice";
 import FormSteps from "../../components/FormSteps/FormSteps";
 
-const initialValues = {
+let initialValues = {
   loanAmount: "",
   reason: "Hospital",
 };
@@ -38,6 +38,11 @@ export default function ApplicationData() {
     }
 
     let applicationData = {
+      loanAmount,
+      reason,
+    };
+
+    initialValues = {
       loanAmount,
       reason,
     };

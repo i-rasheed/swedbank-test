@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import ErrorNotice from "../../components/ErrorNotice/ErrorNotice";
 import FormSteps from "../../components/FormSteps/FormSteps";
 
-const initialValues = {
+let initialValues = {
   bankName: "",
   account_name: "",
   account_no: "",
@@ -36,6 +36,12 @@ export default function BankAccount() {
     }
 
     let bankAccount = {
+      bankName,
+      account_name,
+      account_no,
+    };
+
+    initialValues = {
       bankName,
       account_name,
       account_no,

@@ -4,7 +4,7 @@ import ErrorNotice from "../../components/ErrorNotice/ErrorNotice";
 import "./PersonalData.css";
 import FormSteps from "../../components/FormSteps/FormSteps";
 
-const initialValues = {
+let initialValues = {
   firstName: "",
   lastName: "",
   salary: "",
@@ -34,6 +34,13 @@ const PersonalData = () => {
     }
 
     let personalData = {
+      firstName,
+      lastName,
+      salary,
+      repayment,
+    };
+
+    initialValues = {
       firstName,
       lastName,
       salary,

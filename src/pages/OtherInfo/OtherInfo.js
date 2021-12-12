@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import ErrorNotice from "../../components/ErrorNotice/ErrorNotice";
 import FormSteps from "../../components/FormSteps/FormSteps";
 
-const initialValues = {
+let initialValues = {
   kin_name: "",
   kin_number: "",
 };
@@ -36,6 +36,11 @@ export default function OtherInfo() {
     }
 
     let otherInfo = {
+      kin_name,
+      kin_number,
+    };
+
+    initialValues = {
       kin_name,
       kin_number,
     };
