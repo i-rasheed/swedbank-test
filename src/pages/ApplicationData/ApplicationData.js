@@ -64,7 +64,7 @@ export default function ApplicationData() {
       <form onSubmit={submitHandler}>
         <label htmlFor="loanAmount">Loan Amount: * £ </label>
         <input
-          type="text"
+          type="number"
           name="loanAmount"
           id="loanAmount"
           value={values.loanAmount}
