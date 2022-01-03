@@ -90,7 +90,7 @@ const PersonalData = () => {
         <br /> <br />
         <label htmlFor="salary">Your monthly Salary after tax: * £ </label>
         <input
-          type="text"
+          type="number"
           name="salary"
           id="salary"
           value={values.salary}
